@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+
+    <style>
+        img{
+            width: 200px;
+        }
+        .twitter{
+            background-color: aqua;
+        }
+        .facebook{
+            background-color: purple;
+        }
+        .linkedin{
+            background-color: brown;
+        }
+
+
+
+
+
+
+
+
+        .box{
+            position: relative;
+            width: 300px;
+            border: 5px solid black;
+        
+        
+        }
+
+        .facebook{
+            top: -190px;
+            left: 190px;
+            z-index: 2;
+        }
+        .twitter{
+            z-index: 1;
+        }
+
+        .linkedin{
+            top: -390px;
+            left: 450px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Z -Index</h3>
+    <div class="swim-container">
+        <div class="box twitter"><img src="images/x.avif" alt=""></div>
+        <div class="box facebook"><img src="images/facebook.png" alt=""></div>
+        <div class="box linkedin"><img src="images/linkedin.png" alt=""></div>
+    </div> 
+        
+</body>
+</html>
